@@ -1,0 +1,79 @@
+* {
+    margin: 1px;
+}
+
+.gridWrapper {
+    display:grid;
+    width: 2100px;
+    height: 2970px;
+    grid-template-areas:
+    "he he he he"
+    "na na na as"
+    "a1 a1 a1 as"
+    "a2 a2 a2 as"
+    "a3 se se as"
+    "a4 se se as"
+    "fo fo fo fo"
+    
+    ;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 1px;
+}
+
+.header {
+    grid-area: he;
+    background-color: darkkhaki;
+}
+
+.nav {
+    grid-area: na;
+    background-color: darkorange;
+}
+
+.article1 {
+    grid-area: a1;
+    background-color: darkturquoise;
+}
+.article2 {
+    grid-area: a2;
+    background-color: darksalmon;
+}
+.article3 {
+    grid-area: a3;
+    background-color: sandybrown;
+}
+.article4 {
+    grid-area: a4;
+    background-color: violet;
+}
+
+.aside {
+    grid-area: as;
+    background-color: yellowgreen;
+}
+
+.footer {
+    grid-area: fo;
+    background-color: olive;
+}
+
+.innerGridWrapper {
+    grid-area: se;
+display: grid;
+background-color: white;
+grid-template-rows: 1fr 1fr;
+grid-template-columns: 1fr 1fr;
+grid-gap: 1px;
+
+}
+
+.innerDiv {
+    margin: 10px;
+    background-color: orangered;
+}
+
+h1 {
+    font-family: unset;
+    font-size: 100px;
+}

@@ -1,0 +1,70 @@
+* {
+    margin: 0px;
+}
+
+    .gridWrapper {
+        display:grid;
+        width: 2100px;
+        height: 2970px;
+        grid-template-areas:
+        "he he he"
+        "se se se"
+        "se se se"
+        "se se se"
+        "se se se"
+        "se se se"
+        "se se se"
+        "fo fo fo"
+
+        
+        ;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-gap: 1px;
+    }
+    
+    .header {
+        grid-area: he;
+        background-color: lightblue;
+    }
+
+   
+    .footer {
+        background-color: pink;
+        grid-area: fo;
+    }
+
+    .innerGridWrapper {
+        grid-area: se;
+    display: grid;
+    background-color: lightgreen;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1px;
+
+    }
+
+    .innerDiv1 {
+        margin-bottom: -100px;
+        margin-right: 20px;
+        background-color: lightyellow;
+    }
+    .innerDiv2 {
+        margin-bottom: -100px;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: lightyellow;
+    }
+    .innerDiv3 {
+        margin-left: 20px;
+        margin-bottom: -100px;
+        background-color: lightyellow;
+    }
+
+    .nav {
+        margin-left: 10px;
+        margin-right: -1390px;
+        margin-top: 140px;
+        background-color: lavender;
+    }
+
